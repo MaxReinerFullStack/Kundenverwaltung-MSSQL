@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="CustomerApplication.CustomComboBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:this="clr-namespace:ViewModel;assembly=ViewModel"
+             xmlns:datamodel="clr-namespace:DataModel;assembly=DataModel"
+             xmlns:Converters="clr-namespace:CustomerApplication"
+             mc:Ignorable="d" >
+
+    <UserControl.Resources>
+        <x:Array x:Key="SomeBrushes" Type="{x:Type SolidColorBrush}">
+            <SolidColorBrush>Red</SolidColorBrush>
+            <SolidColorBrush>Green</SolidColorBrush>
+            <SolidColorBrush>Blue</SolidColorBrush>
+        </x:Array>
+              
+        <Converters:EnumItemList x:Key="valueStatusEnumList" EnumType="{x:Type datamodel:Status}" SortBy="Value" >
+            <Converters:EnumItem Value="Fällig" DisplayValue="Red" Text="Fällig" />
+            <Converters:EnumItem Value="In_Arbeit" DisplayValue="Orange" Text="In Arbeit"  />
+            <Converters:EnumItem Value="Erledigt" DisplayValue="Green" Text="Erledigt" />
+        </Converters:EnumItemList>
+    </UserControl.Resources>
+    <ComboBox Name="combo"     Width="120" HorizontalAlignment="Left" Height="30" Margin="2"  
+                  SelectionChanged="combo_SelectionChanged" Loaded="combo_Loaded"
+                 SelectedValuePath="Value" ItemsSource="{StaticResource valueStatusEnumList}">
+        <ComboBox.ItemTemplate>
+            <DataTemplate DataType="{x:Type Converters:EnumItem}" >
+                <WrapPanel Orientation="Horizontal">
+                    <Ellipse Fill="{Binding DisplayValue, Mode=OneTime}" Height="10" Width="10"  Margin="2,2,2,2"/>
+                    <TextBlock Text="{Binding Text, Mode=OneTime}"  Padding="3"  Width="60"  />
+                </WrapPanel>
+            </DataTemplate>
+        </ComboBox.ItemTemplate>
+    </ComboBox>
+</UserControl>
+

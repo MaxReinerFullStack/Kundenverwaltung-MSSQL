@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{373F19CD-5BFB-4E48-AEDD-9332E1DDA446}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerApplication", "CustomerApplication\CustomerApplication.csproj", "{27DBFEFE-19F4-4ADC-B44C-2EC6216A5C49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridFilterLibrary", "DataGridFilterLibrary\DataGridFilterLibrary.csproj", "{512FD53F-9AD1-46A1-A961-9FABDFAD50C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{C989E808-01C5-4252-939E-527DC122EB21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel2\DataModel.csproj", "{CA7A111B-246E-46C9-8622-ECE21FCADDA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{373F19CD-5BFB-4E48-AEDD-9332E1DDA446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373F19CD-5BFB-4E48-AEDD-9332E1DDA446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373F19CD-5BFB-4E48-AEDD-9332E1DDA446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373F19CD-5BFB-4E48-AEDD-9332E1DDA446}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27DBFEFE-19F4-4ADC-B44C-2EC6216A5C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27DBFEFE-19F4-4ADC-B44C-2EC6216A5C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27DBFEFE-19F4-4ADC-B44C-2EC6216A5C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27DBFEFE-19F4-4ADC-B44C-2EC6216A5C49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{512FD53F-9AD1-46A1-A961-9FABDFAD50C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512FD53F-9AD1-46A1-A961-9FABDFAD50C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512FD53F-9AD1-46A1-A961-9FABDFAD50C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512FD53F-9AD1-46A1-A961-9FABDFAD50C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C989E808-01C5-4252-939E-527DC122EB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C989E808-01C5-4252-939E-527DC122EB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C989E808-01C5-4252-939E-527DC122EB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C989E808-01C5-4252-939E-527DC122EB21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA7A111B-246E-46C9-8622-ECE21FCADDA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA7A111B-246E-46C9-8622-ECE21FCADDA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA7A111B-246E-46C9-8622-ECE21FCADDA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7A111B-246E-46C9-8622-ECE21FCADDA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CEE7B295-2850-481F-8F8F-548648541591}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal
